@@ -1,0 +1,97 @@
+1)
+import java.util.*;
+
+class Rev
+{
+	public static void main(String[] args)
+	{
+		Scanner S=new Scanner(System.in);
+		String str=S.next();
+		char[] arr=str.toCharArray();
+		for(int i=arr.length-1;i>=0;i--)
+		{
+			System.out.print(arr[i]);
+		}
+	}
+}
+---------------------------------------------------------------
+2)
+import java.util.Scanner;
+
+class Stringx
+{
+	public static void main(String[] args)
+	{
+		String x;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter String");
+		x=s.nextLine();
+		int l=x.length();
+		for(int i=0;i<l;i++)
+		{
+		System.out.println("Substring ("+i+") "+x.substring(i));
+		}
+	}
+}
+-------------------------------------------------------------------
+3)
+import java.util.Scanner;
+
+class Ques2
+{
+	public static void main(String[] args)
+	{
+		String x,n="";
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter String");
+		x=s.nextLine();
+		System.out.println("Original string "+x);
+		n = x.replaceAll("[aeiouAEIOU]", "");
+		System.out.println("String without vowel "+n);
+	}
+}
+-------------------------------------------------------------------
+4)
+import java.util.Scanner;
+class Ques51
+{
+	public static void main (String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter main string");	
+		String x=s.nextLine();
+		System.out.println("Enter string to be found");
+		String f=s.nextLine();
+		int c=-1;    
+		c=x.lastIndexOf(f);
+		if(c>=0)
+		{  
+			System.out.println("Yes this substring occurs in main string");
+		}
+		else
+		{
+			System.out.println("No this substring doesn't occurs in main string");
+		}
+	}
+}
+--------------------------------------------------------------------------------
+4)
+
+import java.util.Scanner;
+
+class Ques6
+{
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter string");
+		String x=s.nextLine();
+		int c=1;
+		for(int i=0;i<x.length();i++)
+		{
+		if(x.charAt(i)==' ')
+		{c++;}
+		}
+		System.out.println("Word count "+c);
+	}
+}
